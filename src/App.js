@@ -128,11 +128,7 @@ class App extends Component {
     return (
       
       <div className="App">
-      
-        <div id="background">
-        <Row gutter={50}>
-          <Col span={16}>
-          <Card style={{ width: 300 }}>
+          <Card className="cards" style={{ left: 20, width: 300 }}>
 
             <Button onClick={this.pickRandomStudent} ghost type="primary">
               Pick a Student
@@ -146,7 +142,7 @@ class App extends Component {
             </Button>
           </Card>
           <br/>              
-          <Card id="cards" title="Picked Student" bordered={true} style={{ width: 300 }}>
+          <Card className="cards" title="Picked Student" bordered={true} style={{ left: 20, width: 300 }}>
             Name: {this.state.pickedStudent && this.state.pickedStudent.name} <br/>
             Times Previously Called: {this.state.pickedStudent && this.state.pickedStudent.count}
             <br/>
@@ -169,10 +165,8 @@ class App extends Component {
               Submit Rating
             </Button>
           </Card>
-
-        </Col>
-        <Col span={8}>
-          <Card id="cards" title="Student Record" bordered={true} style={{ width: 300 }}>
+          <br/>
+          <Card className="cards" title="Student Record" bordered={true} style={{ left: 20, width: 300 }}>
             
             <Select defaultValue="Display Student Record" style={{ width: 250 }} onChange={this.handleChange2}>
               <Option value="0">Bishka</Option>
@@ -200,15 +194,12 @@ class App extends Component {
             
             Note: {this.state.students[this.state.displayedIndex] && this.state.students[this.state.displayedIndex].note.toString()}
             <br/>
+            <br/>
             <Input placeholder="Enter your note here" onChange={this.handleChange3} />
             <br/>
             <br/>
             <Button onClick={this.submitNote} ghost type="primary" disabled={this.state.emptyInputBox}>Submit</Button>
           </Card>
-          </Col>
-        </Row>
-
-        </div>
       </div>
     ); 
   }
