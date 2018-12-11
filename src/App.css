@@ -1,0 +1,19 @@
+
+#background {
+  background-color:white;
+  width: 100%;
+}
+
+#cards {
+  left: calc(50vh - 150);
+  width: 300;
+}
+
+.App {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  border: 3px solid black;
+  padding: 10px;
+
+}
