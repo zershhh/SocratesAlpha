@@ -4,7 +4,7 @@
   width: 100%;
 }
 
-#cards {
+.cards {
   left: calc(50vh - 150);
   width: 300;
 }
@@ -12,8 +12,7 @@
 .App {
   text-align: center;
   margin: auto;
-  width: 50%;
-  border: 3px solid black;
+   width: 50%;
   padding: 10px;
 
 }

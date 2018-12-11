@@ -130,8 +130,8 @@ class App extends Component {
       <div className="App">
       
         <div id="background">
-        <Row gutter={14}>
-          <Col span={13}>
+        <Row gutter={50}>
+          <Col span={16}>
           <Card style={{ width: 300 }}>
 
             <Button onClick={this.pickRandomStudent} ghost type="primary">
@@ -198,8 +198,7 @@ class App extends Component {
             History: {this.state.students[this.state.displayedIndex] && this.state.students[this.state.displayedIndex].record.toString()} <br/>
             Average: {this.state.students[this.state.displayedIndex] && Math.floor(this.state.students[this.state.displayedIndex].record.reduce((a, b) => a + b, 0) / this.state.students[this.state.displayedIndex].record.length * 100) / 100}/4 <br/>
             
-            Notes: {this.state.students[this.state.displayedIndex] && this.state.students[this.state.displayedIndex].note.toString()}
-            <br/>
+            Note: {this.state.students[this.state.displayedIndex] && this.state.students[this.state.displayedIndex].note.toString()}
             <br/>
             <Input placeholder="Enter your note here" onChange={this.handleChange3} />
             <br/>
