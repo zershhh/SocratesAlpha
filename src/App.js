@@ -18,26 +18,26 @@ class App extends Component {
     this.state = {
 
       students: [
-        {name: "Bishka", count: 0, record: [], note: []},
-        {name: "Brett", count: 0, record: [], note: []},
-        {name: "Cecilia", count: 0, record: [], note: []},
-        {name: "Daniel", count: 0, record: [], note: []},
-        {name: "Ellen", count: 0, record: [], note: []},
-        {name: "Findlay", count: 0, record: [], note: []},
-        {name: "Kristine", count: 0, record: [], note: []},
-        {name: "Louis", count: 0, record: [], note: []},
-        {name: "Richard", count: 0, record: [], note: []},
-        {name: "Robert", count: 0, record: [], note: []},
-        {name: "Shirley", count: 0, record: [], note: []},
-        {name: "Tiger", count: 0, record: [], note: []},
-        {name: "Vera", count: 0, record: [], note: []},
-        {name: "Vincent", count: 0, record: [], note: []},
-        {name: "Zersh", count: 0, record: [], note: []}
+        {name: "Bishka", count: 0, record: [], note: ""},
+        {name: "Brett", count: 0, record: [], note: ""},
+        {name: "Cecilia", count: 0, record: [], note: ""},
+        {name: "Daniel", count: 0, record: [], note: ""},
+        {name: "Ellen", count: 0, record: [], note: ""},
+        {name: "Findlay", count: 0, record: [], note: ""},
+        {name: "Kristine", count: 0, record: [], note: ""},
+        {name: "Louis", count: 0, record: [], note: ""},
+        {name: "Richard", count: 0, record: [], note: ""},
+        {name: "Robert", count: 0, record: [], note: ""},
+        {name: "Shirley", count: 0, record: [], note: ""},
+        {name: "Tiger", count: 0, record: [], note: ""},
+        {name: "Vera", count: 0, record: [], note: ""},
+        {name: "Vincent", count: 0, record: [], note: ""},
+        {name: "Zersh", count: 0, record: [], note: ""}
       ],
 
       aStudentIsPicked: false,
       currentGrade: null,
-      currentNote: "",
+      currentNote: " ",
       displayedIndex: null,
       emptyInputBox: true,
       gradeChosen: false,
@@ -60,11 +60,11 @@ class App extends Component {
     }))
   };
 
-  handleChange3 = (value) => {
-    this.setState(() => ({
-      currentNote: value,
+  handleChange3 = (e) => {
+    this.setState({
+      currentNote: e.target.value,
       emptyInputBox: false
-    }))
+    })
    // console.log(typeof(JSON.stringify(this.state.currentNote)))
   };
 
@@ -117,7 +117,7 @@ class App extends Component {
   submitNote = () => {
     success()
     const students = this.state.students;
-    students[this.state.displayedIndex].note.push(this.state.currentNote);
+    students[this.state.displayedIndex].note += (this.state.currentNote + ", ");
     
     this.setState(() => ({
       students,
