@@ -1,4 +1,4 @@
-### 2018 Fall NYU Shanghai Application Lab
+### 2018 Fall [NYU Shanghai IMA](https://shanghai.nyu.edu/academics/majors/interactive-media-arts) Application Lab
 # **Socrates Project**        
 
 ### Heroku App [link](https://tiger-zersh-socrates-alpha.herokuapp.com/)
