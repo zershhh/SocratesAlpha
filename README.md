@@ -9,16 +9,17 @@
 An application to implement professors' experience in class and assist professor to grade students' class participation.
  
 ### Project Introduction:
-My website is collecting the following data and generate the correlations between the three data.
-* Number of Customers
-* Number of Seasonal Drinks
-* Use of Buy-1-Get-1-Free Voucher
-
-I choose these three data because from my fieldwork in coffeeshop, I want to find the correlation between the number of customers per order and the number of seasonal drinks they order. From my observations and records, I see the trend that more customers might order more seasonal drinks. Also I found some of the customers who used the Buy-1-Get-1-Free Voucher would be more possible to buy seasonal drinks because the seasonal drinks are the most expensive ones and people would regard using the voucher would save them more money.
+The Socrates application has 4 main functions to associate professors:
+* Randomly pick a student to answer questions
+* Pick a student who previously answered the least questions
+* Grade the student answer and record the answer in the student record page
+* Add noted to student record to better know the overall performance of student participation at the end of the semester.
 
 ### Project Interface:
 
 * Tools: Html, Css, React Js, Javascript, Ant Design
 * Design 
-  * Images+Select bar: Easy for stuff to understand and start collecting data
-  * Alert: Indication of succesfully submitted the data/calculate the correlation at the backend
+  * 2 versions for PC use and mobile phone use. PC version is with 2 columns, mobile version is only 1 colume: easy to scroll down.
+  * Ant design interface: simple and straightforward. 
+  * Alerts: When success submit grade for student answer and success submit student note.
+  * Disabled buttons to avoid syntax errors and indicate user to complete other steps before submit.
