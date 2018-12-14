@@ -5,7 +5,7 @@
 
 ### Project Demo Gif:
 
-[Alt Text](https://giphy.com/gifs/wr95b4sVYkCmk6DGq7)
+[Alt Text](https://media.giphy.com/media/wr95b4sVYkCmk6DGq7/giphy.gif)
 
 ### Project Idea:
 An application to implement professors' experience in class and assist professor to grade students' class participation.
