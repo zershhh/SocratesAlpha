@@ -3,6 +3,7 @@
 
 ### Heroku App [link](https://tiger-zersh-socrates-alpha.herokuapp.com/)
 
+### Project Demo Gif
 ### ![Project Demo Gif](https://media.giphy.com/media/wr95b4sVYkCmk6DGq7/giphy.gif)
 
 ### Project Idea:
