@@ -3,7 +3,7 @@
 
 ### Heroku App [link](https://tiger-zersh-socrates-alpha.herokuapp.com/)
 
-### [Project Demo Gif](https://media.giphy.com/media/wr95b4sVYkCmk6DGq7/giphy.gif)
+### ![Project Demo Gif](https://media.giphy.com/media/wr95b4sVYkCmk6DGq7/giphy.gif)
 
 ### Project Idea:
 An application to implement professors' experience in class and assist professor to grade students' class participation.
